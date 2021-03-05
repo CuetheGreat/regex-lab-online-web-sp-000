@@ -28,10 +28,10 @@ end
 
 def valid_phone_number?(phone)
   matches = phone.scan(/\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}\z/)
-  puts matches
+  puts !!matches
   if matches
     return true
-  elsif matches[0] == nil
+  else
     return false
   end
 end
