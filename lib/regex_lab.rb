@@ -16,13 +16,14 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-  matched = text.scan(/[A-Z][a-Z]+[.]/)
+  matched = text.scan(/[A-Z][a-z]+[.]/)
   
   if matched
     return true
   else
     return false
   end
+  
 end
 
 def valid_phone_number?(phone)
