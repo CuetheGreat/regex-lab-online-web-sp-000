@@ -31,7 +31,7 @@ def valid_phone_number?(phone)
   puts matches
   if matches
     return true
-  else
+  elsif matches[0] == nil
     return false
   end
 end
